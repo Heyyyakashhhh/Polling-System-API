@@ -6,8 +6,13 @@ require('dotenv').config();
 
 app.use(express.json())
 
+
+//route connected here
 app.use('/' , route);
 
+
+
+//server listen here
 app.listen(process.env.PORT , ()=>{
     console.log(`Server running at port ${process.env.PORT} `)
 })
